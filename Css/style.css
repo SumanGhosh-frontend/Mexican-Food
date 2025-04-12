@@ -1,0 +1,1584 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/***** reusable css *****/
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* .button{
+
+}
+.btn-main{
+
+} */
+/* .montserrat {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  } */
+
+/* .roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+/* .roboto-bold {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+  } */
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+  --nav-bg: #4a1831;
+  --hero-font-clr: #ffd7ad;
+  --hero-btn-bg: #ffd7ad;
+  --hero-btn-clr: #4a1831;
+  --font-color: #4a1831;
+  --btn-bg: #4a1831;
+  --offer-bg: #4a1831;
+  --common-color: #ffd7ad;
+}
+
+.section-gap {
+  padding: 100px 0;
+}
+
+/**** reusable css *****/
+
+/***** Section header start *****/
+
+.header-section {
+  background-color: var(--nav-bg);
+  position: relative;
+}
+
+.mobile--version--logo figure img {
+  width: 100%;
+  display: block;
+}
+
+.mobile--toggle--bar .menu-bar {
+  color: var(--common-color);
+  font-size: 20px;
+}
+
+.active .nav {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+ul.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item .nav-link {
+  margin: 0 10px;
+}
+
+.nav-item .nav-link a {
+  padding: 34px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+}
+
+/***** End header Section *****/
+
+/***** Section hero start *****/
+
+.hero-section {
+  background-image: url(../Images/hero/banner\ img.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh;
+}
+
+.logo {
+  padding: 20px 0;
+  width: 12%;
+}
+
+.logo img {
+  width: 100%;
+  display: block;
+}
+
+.hero-contain h1 {
+  text-transform: uppercase;
+  margin-bottom: 35px;
+  font-size: 70px;
+  font-family: "Roboto", serif;
+  color: var(--hero-font-clr);
+}
+
+.hero-contain p {
+  max-width: 600px;
+  color: #fff;
+  font-size: 25px;
+  font-family: "Roboto", serif;
+  color: var(--hero-font-clr);
+  line-height: 1.4;
+  margin-bottom: 35px;
+}
+
+.hero-btn a {
+  display: inline-block;
+  color: var(--hero-btn-clr);
+  background-color: var(--hero-btn-bg);
+  padding: 15px 60px;
+  border-radius: 8px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.hero-btn a:hover {
+  background-color: var(--hero-btn-clr);
+  color: var(--hero-btn-bg);
+}
+
+/***** End hero Section *****/
+
+/***** Section menu start *****/
+
+.menu-section {
+  background-color: var(--common-color);
+  padding-top: 100px;
+}
+
+.menu-section .container .row {
+  text-align: center;
+}
+
+.menu-section .container .row h2 {
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  color: var(--font-color);
+}
+
+.menu-section .container .row p {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  color: var(--font-color);
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 1.4;
+  margin-bottom: 50px;
+}
+
+.menu-btn {
+  margin-bottom: 100px;
+}
+
+.menu-btn a {
+  display: inline-block;
+  padding: 12px 60px;
+  border-radius: 25px;
+  color: var(--common-color);
+  background-color: var(--btn-bg);
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  transition: all 0.3s;
+  letter-spacing: 1px;
+}
+
+.menu-item {
+  background-image: url(../Images/menu/Rectángulo\ 1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 360px;
+}
+
+/***** End menu Section *****/
+
+/***** Section about start *****/
+
+.about-section {
+  background-color: var(--common-color);
+}
+
+.about-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-left {
+  width: 40%;
+}
+
+.about-left figure img {
+  width: 100%;
+  display: block;
+}
+
+.about-right h2 {
+  font-size: 70px;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  color: var(--font-color);
+}
+
+.about-right p {
+  max-width: 600px;
+  width: 100%;
+  font-size: 20px;
+  font-family: "Roboto", serif;
+  line-height: 1.3;
+  color: var(--font-color);
+}
+
+.about-btn {
+  margin-top: 50px;
+}
+
+.about-btn a {
+  display: inline-block;
+  padding: 12px 60px;
+  border-radius: 25px;
+  color: var(--common-color);
+  background-color: var(--btn-bg);
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+/***** End about Section *****/
+
+/***** Section offer start*****/
+
+.offer-section {
+  background-color: var(--offer-bg);
+}
+
+.offer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offer-right {
+  width: 40%;
+}
+
+.offer-right figure img {
+  width: 100%;
+  display: block;
+}
+
+.offer-left h2 {
+  font-size: 70px;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  color: var(--common-color);
+}
+
+.offer-left p {
+  max-width: 600px;
+  width: 100%;
+  font-size: 20px;
+  font-family: "Roboto", serif;
+  line-height: 1.3;
+  color: var(--common-color);
+}
+
+.offer-btn {
+  margin-top: 50px;
+}
+
+.offer-btn a {
+  display: inline-block;
+  padding: 12px 60px;
+  border-radius: 25px;
+  color: var(--font-color);
+  background-color: var(--common-color);
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+/***** End offer Section *****/
+
+/***** Section middle-order start*****/
+
+.middle-order {
+  background-image: url(../Images/Highlight/backgroundimg.png);
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.middle-order .container .row {
+  text-align: center;
+}
+
+.middle-logo {
+  width: 18%;
+  display: inline-block;
+  margin-bottom: 40px;
+  padding-top: 100px;
+}
+
+.middle-logo figure img {
+  width: 100%;
+  display: block;
+}
+
+.middle-content {
+  margin-bottom: 35px;
+}
+
+.middle-content p {
+  max-width: 730px;
+  width: 100%;
+  font-size: 22px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  color: var(--common-color);
+}
+
+.middle-head h3 {
+  font-size: 35px;
+  text-transform: capitalize;
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  color: var(--common-color);
+  padding-bottom: 100px;
+}
+
+.overlay {
+  width: 100%;
+  height: auto;
+  background-color: rgb(20 7 23 / 60%);
+}
+
+/***** End middle-order Section *****/
+
+/***** Section latest-offer start *****/
+
+.latest-offer {
+  background-color: var(--common-color);
+}
+
+section.latest-offer .container .row {
+  text-align: center;
+}
+
+section.latest-offer .container .row h3 {
+  font-size: 35px;
+  text-transform: capitalize;
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  color: var(--font-color);
+  margin-bottom: 35px;
+}
+
+section.latest-offer .container .row p {
+  max-width: 730px;
+  width: 100%;
+  font-size: 22px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: "Roboto", serif;
+  color: var(--font-color);
+}
+
+.offer-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.form {
+  position: relative;
+}
+
+.subscribe {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translate(0%, -50%);
+  background-color: var(--btn-bg);
+  color: #fff;
+  border: none;
+  padding: 19px 40px;
+  border-radius: 30px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.offer-form input {
+  padding: 15px 200px 14px 70px;
+  border-radius: 45px 0 0 45px;
+  border: 1px solid #ddd;
+  text-transform: capitalize;
+  font-family: "Roboto", serif;
+  font-size: 20px;
+}
+
+.latest-offer-btn {
+  position: absolute;
+  top: 0;
+  right: 24%;
+}
+
+.latest-offer--btn a {
+  color: var(--common-color);
+  background-color: var(--btn-bg);
+  padding: 16px 40px;
+  text-transform: capitalize;
+  font-size: 20px;
+  border-radius: 45px;
+}
+
+/***** End latest-offer Section *****/
+
+/***** Section footer start *****/
+
+.footer-section {
+  background-color: var(--nav-bg);
+}
+
+.footer-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-box .footer-contain {
+  max-width: 350px;
+  width: 100%;
+  color: var(--common-color);
+  font-family: "Roboto", serif;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.footer-box .logo-text {
+  margin-bottom: 15px;
+}
+
+.footer-box .logo-text a {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: var(--common-color);
+  font-family: "Roboto", serif;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.social-icon li:not(:last-child) {
+  margin-right: 8px;
+}
+
+.social-icon li a {
+  padding-right: 20px;
+}
+
+.social-icon li {
+  width: 15%;
+}
+
+.social-icon li a figure img {
+  width: 100%;
+  display: block;
+}
+
+.link {
+  font-size: 25px;
+  font-family: "Roboto", serif;
+  text-transform: capitalize;
+  color: var(--common-color);
+  margin-bottom: 15px;
+}
+
+.usefull-link li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.usefull-link li a {
+  padding: 5px 0;
+  font-family: "Roboto", serif;
+  color: var(--common-color);
+  text-transform: capitalize;
+}
+
+/***** End footer Section *****/
+
+/***** Media Query start *****/
+
+@media screen and (min-width: 320px) and (max-width: 575.9px) {
+  /***** Section header start *****/
+
+  .container {
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .mobile-version {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+
+  .mobile--toggle--bar .menu-close {
+    display: none;
+  }
+
+  .mobile--version--logo {
+    width: 10%;
+  }
+
+  .nav {
+    width: 100%;
+    height: auto;
+    background-color: var(--common-color);
+    position: absolute;
+    top: 1;
+    left: 0;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  ul.nav-item {
+    flex-direction: column;
+  }
+
+  .nav-item .nav-link {
+    margin: 10px 10px;
+  }
+
+  .nav-item .nav-link a {
+    padding: 10px 0px;
+    font-size: 14px;
+    color: var(--font-color);
+  }
+
+  /***** End header Section *****/
+
+  /***** Section hero start*****/
+
+  .hero-section {
+    height: auto;
+  }
+
+  .hero-inner {
+    padding: 25px 0;
+  }
+
+  .hero-inner .logo {
+    display: none;
+  }
+
+  .hero-contain h1 {
+    font-size: 30px;
+  }
+
+  .hero-contain p {
+    max-width: 250px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .hero-btn a {
+    padding: 15px 40px;
+    font-size: 12px;
+  }
+
+  /***** End hero Section *****/
+
+  /***** Section menu start *****/
+
+  .menu-section {
+    padding-top: 50px;
+  }
+
+  .menu-section .container .row h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+
+  .menu-section .container .row p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .menu-btn a {
+    padding: 12px 40px;
+    font-size: 12px;
+  }
+
+  .menu-btn {
+    margin-bottom: 25px;
+  }
+
+  .menu-item {
+    background-size: contain;
+    height: 150px;
+  }
+
+  /***** End menu section*****/
+
+  /***** Section about start*****/
+
+  .section-gap {
+    padding: 30px 0;
+  }
+
+  .about-inner {
+    flex-direction: column;
+  }
+
+  .about-left {
+    width: 80%;
+  }
+
+  .about-right {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .about-right h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .about-right p {
+    font-size: 14px;
+  }
+
+  .about-btn {
+    margin-top: 25px;
+  }
+
+  .about-btn a {
+    padding: 12px 40px;
+    font-size: 12px;
+  }
+
+  /***** End about Section *****/
+
+  /***** Section offer start *****/
+
+  .offer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .offer-left h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .offer-left p {
+    max-width: 600px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .offer-btn {
+    margin-top: 20px;
+  }
+
+  .offer-btn a {
+    padding: 12px 40px;
+    font-size: 12px;
+  }
+
+  .offer-right {
+    width: 70%;
+  }
+
+  .offer-right {
+    margin-top: 25px;
+  }
+
+  /***** End offer Section *****/
+
+  /***** Section middle-offer *****/
+
+  .middle-logo {
+    width: 30%;
+    display: inline-block;
+    margin-bottom: 30px;
+    padding-top: 50px;
+  }
+
+  .middle-content {
+    margin-bottom: 25px;
+  }
+
+  .middle-content p {
+    font-size: 14px;
+  }
+
+  .middle-head h3 {
+    font-size: 20px;
+    padding-bottom: 50px;
+  }
+
+  /***** End middel-offer Section *****/
+
+  /***** Section latest offer *****/
+
+  section.latest-offer .container .row h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  section.latest-offer .container .row p {
+    max-width: 350px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .offer-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 25px 0;
+  }
+
+  .offer-form input {
+    padding: 10px 80px 10px 35px;
+    border-radius: 45px 45px 45px 45px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .subscribe {
+    position: absolute;
+    top: 36%;
+    right: -20px;
+    transform: translate(0%, -50%);
+    background-color: var(--btn-bg);
+    color: #fff;
+    border: none;
+    padding: 13px 30px;
+    border-radius: 30px;
+    font-size: 10px;
+    text-transform: capitalize;
+  }
+
+  /***** End latest offer Section *****/
+
+  /***** Section footer start *****/
+
+  .footer-inner {
+    flex-direction: column;
+  }
+
+  .footer-box {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .social-icon {
+    margin: 25px 0;
+  }
+
+  .usefull-link li a {
+    font-size: 14px;
+  }
+
+  .link {
+    font-size: 25px;
+    /* padding-right: 30px; */
+  }
+
+  /***** End footer Section *****/
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.9px) {
+  /***** Section header start *****/
+
+  .container {
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .mobile-version {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+  }
+
+  .mobile--toggle--bar .menu-close {
+    display: none;
+  }
+
+  .mobile--version--logo {
+    width: 10%;
+  }
+
+  .nav {
+    width: 100%;
+    height: auto;
+    background-color: var(--common-color);
+    position: absolute;
+    top: 1;
+    left: 0;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  ul.nav-item {
+    flex-direction: column;
+  }
+
+  .nav-item .nav-link {
+    margin: 10px 0px;
+  }
+
+  .nav-item .nav-link a {
+    padding: 12px 0px;
+    font-size: 16px;
+    color: var(--font-color);
+  }
+
+  /***** End header Section *****/
+
+  /***** Section banner start  *****/
+
+  .hero-section {
+    height: auto;
+  }
+
+  .hero-inner {
+    padding: 50px 0;
+  }
+
+  .hero-inner .logo {
+    display: none;
+  }
+
+  .hero-contain h1 {
+    margin-bottom: 25px;
+    font-size: 35px;
+  }
+
+  .hero-contain p {
+    max-width: 300px;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .hero-btn a {
+    padding: 12px 40px;
+    font-size: 14px;
+  }
+
+  /***** End banner Section *****/
+
+  /***** Section menu start *****/
+
+  .menu-section {
+    padding-top: 50px;
+  }
+
+  .menu-section .container .row h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+
+  .menu-section .container .row p {
+    font-size: 15px;
+    text-transform: capitalize;
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .menu-btn a {
+    padding: 12px 40px;
+    font-size: 14px;
+  }
+
+  .menu-item {
+    background-size: contain;
+    height: 200px;
+  }
+
+  .menu-btn {
+    margin-bottom: 20px;
+  }
+
+  /***** End menu Section *****/
+
+  /***** Section about section *****/
+
+  .about-inner {
+    flex-direction: column;
+  }
+
+  .about-left {
+    width: 70%;
+  }
+
+  .about-right {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .about-right h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .about-right p {
+    font-size: 15px;
+  }
+
+  .about-btn {
+    margin-top: 20px;
+  }
+
+  .about-btn a {
+    padding: 12px 40px;
+    font-size: 14px;
+  }
+
+  /***** End about Section *****/
+
+  /***** Section offer start *****/
+
+  .section-gap {
+    padding: 50px 0;
+  }
+
+  .offer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .offer-left h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  .offer-left p {
+    max-width: 500px;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .offer-btn {
+    margin-top: 25px;
+  }
+
+  .offer-btn a {
+    padding: 12px 40px;
+    font-size: 14px;
+  }
+
+  .offer-right {
+    width: 70%;
+    margin-top: 25px;
+  }
+
+  .subscribe {
+    position: absolute;
+    top: 36%;
+    right: -20px;
+    transform: translate(0%, -50%);
+    background-color: var(--btn-bg);
+    color: #fff;
+    border: none;
+    padding: 13px 30px;
+    border-radius: 30px;
+    font-size: 10px;
+    text-transform: capitalize;
+  }
+
+  /***** End offer Section *****/
+
+  /***** Section middle order*****/
+
+  .middle-logo {
+    width: 30%;
+    display: inline-block;
+    margin-bottom: 25px;
+    padding-top: 50px;
+  }
+
+  .middle-content {
+    margin-bottom: 25px;
+  }
+
+  .middle-content p {
+    max-width: 730px;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .middle-head h3 {
+    font-size: 22px;
+    padding-bottom: 50px;
+  }
+
+  /***** End middle order Section *****/
+
+  /***** Section latest offer start *****/
+
+  section.latest-offer .container .row h3 {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+  section.latest-offer .container .row p {
+    max-width: 375px;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .offer-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    flex-direction: column;
+    /* position: relative; */
+  }
+
+  .offer-form input {
+    padding: 10px 100px 10px 40px;
+    border-radius: 45px 45px 45px 45px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .latest-offer--btn a {
+    padding: 12px 40px;
+    font-size: 14px;
+  }
+
+  /***** End latest offer section *****/
+
+  /***** Section footer start *****/
+
+  .footer-inner {
+    flex-direction: column;
+  }
+
+  .footer-box {
+    margin-bottom: 25px;
+  }
+
+  .social-icon {
+    margin: 25px 0;
+  }
+
+  .social-icon li {
+    width: 16%;
+  }
+
+  .usefull-link li a {
+    font-size: 14px;
+  }
+
+  /***** End footer Section *****/
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.9px) {
+  /***** Section header start *****/
+
+  .container {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .mobile--version--logo {
+    display: none;
+  }
+
+  .mobile--toggle--bar .menu-bar {
+    display: none;
+  }
+
+  .mobile--toggle--bar .menu-close {
+    display: none;
+  }
+
+  .nav-item .nav-link a {
+    padding: 20px 15px;
+    font-size: 16px;
+  }
+
+  /***** End header Section *****/
+
+  /***** Section hero start *****/
+
+  .hero-section {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-inner {
+    padding-bottom: 20px;
+  }
+
+  .hero-contain h1 {
+    margin-bottom: 25px;
+    font-size: 40px;
+  }
+
+  .hero-contain p {
+    max-width: 420px;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .hero-btn a {
+    padding: 12px 35px;
+    font-size: 14px;
+  }
+
+  /***** End hero Section *****/
+
+  /***** Section menu start *****/
+
+  .menu-section {
+    padding-top: 50px;
+  }
+
+  .menu-section .container .row h2 {
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+
+  .menu-section .container .row p {
+    font-size: 14px;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .menu-btn {
+    margin-bottom: 25px;
+  }
+
+  .menu-item {
+    background-size: contain;
+    height: 250px;
+  }
+
+  /***** End menu Section *****/
+
+  /***** Section about start *****/
+
+  .section-gap {
+    padding: 60px 0;
+  }
+
+  .about-left {
+    width: 45%;
+  }
+
+  .about-right h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .about-right p {
+    max-width: 320px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .about-btn {
+    margin-top: 20px;
+  }
+
+  /***** End about Section *****/
+
+  /***** Section offer startr *****/
+
+  .offer-left h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+  .offer-left p {
+    max-width: 320px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .offer-btn {
+    margin-top: 30px;
+  }
+
+  .offer-right {
+    width: 45%;
+  }
+
+  /***** End offer section *****/
+
+  /***** Section middle offer *****/
+
+  .middle-logo {
+    width: 30%;
+    display: inline-block;
+    margin-bottom: 25px;
+    padding-top: 50px;
+  }
+
+  .middle-content {
+    margin-bottom: 25px;
+  }
+
+  .middle-content p {
+    max-width: 600px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .middle-head h3 {
+    font-size: 30px;
+    padding-bottom: 50px;
+  }
+
+  /***** End middle offer section *****/
+
+  /***** Section latest offer start *****/
+
+  section.latest-offer .container .row h3 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  section.latest-offer .container .row p {
+    max-width: 500px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .offer-form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .offer-form input {
+    padding: 12px 150px 12px 50px;
+    border-radius: 45px 45px 45px 45px;
+    border: 1px solid #ddd;
+    font-size: 18px;
+  }
+
+  .latest-offer--btn {
+    margin-top: 15px;
+  }
+
+  .subscribe {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translate(0%, -50%);
+    background-color: var(--btn-bg);
+    color: #fff;
+    border: none;
+    padding: 16px 35px;
+    border-radius: 30px;
+    font-size: 12px;
+    text-transform: capitalize;
+  }
+
+  /***** End latest offer Section *****/
+
+  /***** Section footer start *****/
+
+  .footer-box p {
+    max-width: 275px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .social-icon {
+    margin: 25px 0;
+  }
+
+  .footer-inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-box {
+    width: 50%;
+    padding: 10px 15px;
+  }
+
+  /***** End footer Section *****/
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.9px) {
+  /***** Section header start*****/
+
+  .container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .mobile--version--logo {
+    display: none;
+  }
+
+  .mobile--toggle--bar .menu-bar {
+    display: none;
+  }
+
+  .mobile--toggle--bar .menu-close {
+    display: none;
+  }
+
+  .nav-item .nav-link a {
+    font-size: 18px;
+  }
+
+  /***** End header Section *****/
+
+  /***** Section hero start*****/
+
+  .hero-section {
+    height: auto;
+    padding: 50px 0;
+  }
+
+  .hero-contain h1 {
+    margin-bottom: 20px;
+    font-size: 55px;
+  }
+
+  .hero-contain p {
+    max-width: 450px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.3;
+    margin-bottom: 25px;
+  }
+
+  .hero-btn a {
+    padding: 15px 50px;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+
+  /***** End hero Section *****/
+
+  /***** Section menu start *****/
+
+  .menu-section {
+    padding-top: 50px;
+  }
+
+  .menu-btn {
+    margin-bottom: 50px;
+  }
+
+  .menu-item {
+    background-size: contain;
+    height: 300px;
+  }
+
+  .menu-section .container .row h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+
+  .menu-section .container .row p {
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 25px;
+  }
+
+  /***** End menu Section *****/
+
+  /***** Section about start*****/
+
+  .section-gap {
+    padding: 70px 0;
+  }
+
+  .about-left {
+    width: 45%;
+  }
+
+  .about-right p {
+    max-width: 450px;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .about-right h2 {
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+
+  .about-btn {
+    margin-top: 30px;
+  }
+
+  /***** End about Section *****/
+
+  /***** Section offer start*****/
+
+  .offer-left h2 {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+
+  .offer-left p {
+    max-width: 450px;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .offer-btn {
+    margin-top: 40px;
+  }
+
+  .offer-right {
+    width: 45%;
+  }
+
+  /***** End offer Section *****/
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  /***** Section header start*****/
+
+  .container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .mobile--version--logo {
+    display: none;
+  }
+
+  .mobile--toggle--bar .menu-bar {
+    display: none;
+  }
+
+  .mobile--toggle--bar .menu-close {
+    display: none;
+  }
+
+  /***** End header Section *****/
+}
+
+@media screen and (min-width: 1400px) {
+  /***** Section header start*****/
+
+  .container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .mobile--version--logo {
+    display: none;
+  }
+
+  .mobile--toggle--bar .menu-bar {
+    display: none;
+  }
+
+  .mobile--toggle--bar .menu-close {
+    display: none;
+  }
+
+  /***** End header Section *****/
+}
+
+/***** Media Query End *****/
